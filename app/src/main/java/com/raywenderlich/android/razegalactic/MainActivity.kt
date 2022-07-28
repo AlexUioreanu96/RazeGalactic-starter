@@ -37,7 +37,7 @@ import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
 import android.transition.AutoTransition
 import android.transition.TransitionManager
-import android.view.animation.LinearInterpolator
+import android.view.animation.AnticipateOvershootInterpolator
 import kotlinx.android.synthetic.main.keyframe1.*
 
 /**
@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             anim.duration = if (switch1.isChecked) 2000 else 1000
 
             //6
-            anim.interpolator = LinearInterpolator()
+            anim.interpolator = AnticipateOvershootInterpolator()
             anim.start()
         }
 
