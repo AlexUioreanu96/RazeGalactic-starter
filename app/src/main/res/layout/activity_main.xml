@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+  <ImageView
+      android:id="@+id/spaceStationIcon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/space_station_icon"
+      tools:layout_editor_absoluteX="21dp"
+      tools:layout_editor_absoluteY="28dp" />
+
+  <TextView
+      android:id="@+id/spaceStationLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/space_stations"
+      tools:layout_editor_absoluteX="21dp"
+      tools:layout_editor_absoluteY="144dp" />
+
+  <ImageView
+      android:id="@+id/flightsIcon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/rocket_icon"
+      tools:layout_editor_absoluteX="176dp"
+      tools:layout_editor_absoluteY="28dp" />
+
+
+  <TextView
+      android:id="@+id/flightsLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/flights"
+      tools:layout_editor_absoluteX="176dp"
+      tools:layout_editor_absoluteY="125dp" />
+
+  <ImageView
+      android:id="@+id/roverIcon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/rover_icon"
+      tools:layout_editor_absoluteX="268dp"
+      tools:layout_editor_absoluteY="28dp" />
+
+
+  <TextView
+      android:id="@+id/roverLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/rovers"
+      tools:layout_editor_absoluteX="290dp"
+      tools:layout_editor_absoluteY="112dp" />
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:gravity="center"
+      android:paddingEnd="20dp"
+      android:text="@string/dca"
+      android:textColor="@android:color/white"
+      tools:layout_editor_absoluteX="68dp"
+      tools:layout_editor_absoluteY="221dp" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:gravity="center"
+      android:paddingStart="20dp"
+      android:text="@string/mars"
+      android:textColor="@android:color/white"
+      tools:layout_editor_absoluteX="261dp"
+      tools:layout_editor_absoluteY="221dp" />
+
+  <ImageView
+      android:id="@+id/doubleArrowsIcon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/double_arrows"
+      tools:layout_editor_absoluteX="140dp"
+      tools:layout_editor_absoluteY="175dp" />
+
+
+  <Switch
+      android:id="@+id/switch1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorAccent"
+      android:checked="false"
+      android:padding="8dp"
+      android:switchPadding="24dp"
+      android:text="@string/one_way"
+      android:textColor="@android:color/white"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="318dp" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorAccent"
+      android:padding="8dp"
+      android:text="@string/traveller"
+      android:textColor="@android:color/white"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="376dp" />
+
+  <ImageView
+      android:id="@+id/rocketIcon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/rocket_icon"
+      tools:layout_editor_absoluteX="81dp"
+      tools:layout_editor_absoluteY="509dp" />
+
+  <ImageView
+      android:id="@+id/galaxyIcon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/galaxy"
+      tools:layout_editor_absoluteX="153dp"
+      tools:layout_editor_absoluteY="509dp" />
+
+  <Button
+      android:id="@+id/departButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="44dp"
+      android:text="@string/depart"
+      android:textColor="@android:color/white"
+      app:backgroundTint="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      tools:layout_editor_absoluteX="153dp" />
+
+
+</android.support.constraint.ConstraintLayout>
