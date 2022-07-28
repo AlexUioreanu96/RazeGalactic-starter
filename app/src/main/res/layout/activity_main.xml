@@ -9,7 +9,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
   <ImageView
       android:id="@+id/spaceStationIcon"
       android:layout_width="30dp"
@@ -111,16 +110,17 @@
       android:id="@+id/doubleArrowsIcon"
       android:layout_width="60dp"
       android:layout_height="60dp"
+      android:layout_marginBottom="40dp"
       android:src="@drawable/double_arrows"
+      app:layout_constraintBottom_toTopOf="@+id/guideline1"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.5"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="175dp" />
+      app:layout_constraintStart_toStartOf="parent" />
 
 
   <Switch
       android:id="@+id/switch1"
-      android:layout_width="wrap_content"
+      android:layout_width="160dp"
       android:layout_height="wrap_content"
       android:background="@color/colorAccent"
       android:checked="false"
@@ -168,6 +168,20 @@
       app:backgroundTint="@color/colorPrimary"
       app:layout_constraintBottom_toBottomOf="parent"
       tools:layout_editor_absoluteX="153dp" />
+
+  <android.support.constraint.Guideline
+      android:id="@+id/guideline1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="200dp" />
+
+  <android.support.constraint.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.05" />
 
 
 </android.support.constraint.ConstraintLayout>
