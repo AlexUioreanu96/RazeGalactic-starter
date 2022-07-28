@@ -81,34 +81,40 @@
 
   <TextView
       android:id="@+id/textView1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="124dp"
+      android:layout_height="98dp"
+      android:layout_marginEnd="40dp"
       android:background="@color/colorPrimary"
       android:gravity="center"
       android:paddingEnd="20dp"
       android:text="@string/dca"
       android:textColor="@android:color/white"
-      tools:layout_editor_absoluteX="68dp"
-      tools:layout_editor_absoluteY="221dp" />
+      app:layout_constraintBottom_toBottomOf="@+id/doubleArrowsIcon"
+      app:layout_constraintEnd_toEndOf="@+id/doubleArrowsIcon"
+      app:layout_constraintTop_toTopOf="@+id/doubleArrowsIcon" />
 
   <TextView
       android:id="@+id/textView2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="124dp"
+      android:layout_height="98dp"
+      android:layout_marginStart="40dp"
       android:background="@color/colorPrimary"
       android:gravity="center"
       android:paddingStart="20dp"
       android:text="@string/mars"
       android:textColor="@android:color/white"
-      tools:layout_editor_absoluteX="261dp"
-      tools:layout_editor_absoluteY="221dp" />
+      app:layout_constraintBottom_toBottomOf="@+id/doubleArrowsIcon"
+      app:layout_constraintStart_toStartOf="@+id/doubleArrowsIcon"
+      app:layout_constraintTop_toTopOf="@+id/doubleArrowsIcon" />
 
   <ImageView
       android:id="@+id/doubleArrowsIcon"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
       android:src="@drawable/double_arrows"
-      tools:layout_editor_absoluteX="140dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
       tools:layout_editor_absoluteY="175dp" />
 
 
