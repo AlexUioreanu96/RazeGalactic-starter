@@ -33,6 +33,7 @@ package com.raywenderlich.android.razegalactic
 import android.os.Bundle
 import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
+import android.transition.TransitionManager
 import kotlinx.android.synthetic.main.keyframe1.*
 
 /**
@@ -48,6 +49,17 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.keyframe1)
+
+    constraintSet1.clone(constraintLayout) //1
+    constraintSet2.clone(this, R.layout.activity_main) //2
+
+    departButton.setOnClickListener { //3
+      //apply the transition
+      TransitionManager.beginDelayedTransition(constraintLayout) //4
+      val constraint = if (!isOffscreen) constraintSet1 else constraintSet2
+      isOffscreen = !isOffscreen
+      constraint.applyTo(constraintLayout) //5
+    }
 
     switch1.setOnCheckedChangeListener { _, isChecked ->
       switch1.setText(if (isChecked) R.string.round_trip else R.string.one_way)
