@@ -149,7 +149,7 @@
   <ImageView
       android:id="@+id/rocketIcon"
       android:layout_width="30dp"
-      android:layout_height="30dp"
+      android:layout_height="90dp"
       android:src="@drawable/rocket_icon"
       app:layout_constraintCircle="@id/galaxyIcon"
       app:layout_constraintCircleAngle="270"
