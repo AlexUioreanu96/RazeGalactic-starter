@@ -31,13 +31,19 @@
 package com.raywenderlich.android.razegalactic
 
 import android.os.Bundle
+import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.keyframe1.*
 
 /**
  * Main Screen
  */
 class MainActivity : AppCompatActivity() {
+
+  private val constraintSet1 = ConstraintSet()
+  private val constraintSet2 = ConstraintSet()
+
+  private var isOffscreen = true
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
