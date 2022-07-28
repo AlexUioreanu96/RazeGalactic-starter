@@ -14,9 +14,12 @@
       android:id="@+id/spaceStationIcon"
       android:layout_width="30dp"
       android:layout_height="30dp"
+      android:layout_marginTop="15dp"
       android:src="@drawable/space_station_icon"
-      tools:layout_editor_absoluteX="21dp"
-      tools:layout_editor_absoluteY="28dp" />
+      app:layout_constraintEnd_toStartOf="@+id/flightsIcon"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/spaceStationLabel"
@@ -31,8 +34,10 @@
       android:layout_width="30dp"
       android:layout_height="30dp"
       android:src="@drawable/rocket_icon"
-      tools:layout_editor_absoluteX="176dp"
-      tools:layout_editor_absoluteY="28dp" />
+      app:layout_constraintEnd_toStartOf="@+id/roverIcon"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/spaceStationIcon"
+      app:layout_constraintTop_toTopOf="@+id/spaceStationIcon" />
 
 
   <TextView
@@ -48,8 +53,10 @@
       android:layout_width="30dp"
       android:layout_height="30dp"
       android:src="@drawable/rover_icon"
-      tools:layout_editor_absoluteX="268dp"
-      tools:layout_editor_absoluteY="28dp" />
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/flightsIcon"
+      app:layout_constraintTop_toTopOf="@+id/flightsIcon" />
 
 
   <TextView
